@@ -5,7 +5,8 @@ namespace Jinas\Saturn;
 use Jinas\Saturn\Response\Response;
 use Jinas\Saturn\Utils\ResponseUtil;
 
-class AppBaseUtil {
+class AppBaseUtil
+{
 
     /**
      * sendResponse

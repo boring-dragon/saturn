@@ -1,7 +1,9 @@
 <?php
+
 namespace Jinas\Saturn\Request;
 
-class Client {
+class Client
+{
 
     /**
      * request
@@ -23,5 +25,4 @@ class Client {
 
         return $data;
     }
-    
 }

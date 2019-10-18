@@ -5,7 +5,8 @@ namespace Jinas\Saturn;
 use Jinas\Saturn\Extractors\Extractor;
 use Jinas\Saturn\AppBaseUtil;
 
-class Saturn extends AppBaseUtil{
+class Saturn extends AppBaseUtil
+{
 
     /**
      * parse
@@ -32,7 +33,4 @@ class Saturn extends AppBaseUtil{
         $jsonData = $this->sendResponse($data, 'Data extracted successfuly');
         return $jsonData;
     }
-
-    
 }
-

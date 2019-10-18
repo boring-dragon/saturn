@@ -120,7 +120,7 @@ class Extractor extends AppBaseUtil
             if ($meta->getAttribute('property') == 'og:image') {
                 $this->lead_image_url = $meta->getAttribute('content');
             }
-            
+
             if ($meta->getAttribute('property') == 'og:site_name') {
                 $this->site_name = $meta->getAttribute('content');
             }
