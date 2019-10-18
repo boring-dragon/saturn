@@ -1,6 +1,7 @@
 {
     "name": "jinas/saturn",
     "description": "Saturn Parser extracts the bits that humans care about from any URL you give it",
+    "license": "MIT",
     "authors": [
         {
             "name": "Mohamed Jinas",

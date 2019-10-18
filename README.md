@@ -1,6 +1,8 @@
+![Image description](link-to-image)
 
 ### Saturn Parser
-Saturn Parser extracts the bits that humans care about from any URL you give it
+Saturn Parser is a composer package that extracts the bits that humans care about from any URL you give it.
+like article content, titles, authors, published dates, excerpts, lead images, and more.
 
 ## Installation:
 - Command:
@@ -47,8 +49,6 @@ echo $rp->parse('https://www.cnet.com/reviews/google-nest-mini-review/');
 }
 
 ```
-
-Inspired by [mercury](https://github.com/postlight/mercury-parser)
 
 ### Source codes:
 
