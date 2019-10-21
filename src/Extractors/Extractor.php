@@ -86,7 +86,10 @@ class Extractor extends AppBaseUtil
     protected function UnTitle()
     {
         $nodes = $this->doc->getElementsByTagName('h1');
-        $this->un_title = $nodes->item(0)->nodeValue;
+        $single_node = $nodes->item(0);
+        $untemp_title = $single_node === null ? null : $single_node->nodeValue;
+
+        $this->un_title = $untemp_title;
 
         return $this;
     }
