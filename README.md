@@ -1,18 +1,22 @@
+# Saturn Parser
+
+Saturn Parser is a composer package that extracts the bits that humans care about from any URL you give it.
+like article content, titles, authors, published dates, excerpts, lead images, and more.
+
 ![Image description](https://jinas.me/images/saturnparser-01.jpg)
 
 Demo Application [Saturn Demo](http://saturn.jinas.me/)
 
-### Saturn Parser
-Saturn Parser is a composer package that extracts the bits that humans care about from any URL you give it.
-like article content, titles, authors, published dates, excerpts, lead images, and more.
+## Installation
 
-## Installation:
 - Command:
+
 ```bash/shell
 composer require jinas/saturn
 ```
 
-## Usage:
+## Usage
+
 - Code sample:
 
 ```php
@@ -28,8 +32,6 @@ $rp = new Saturn;
 echo $rp->parse('https://www.cnet.com/reviews/google-nest-mini-review/');
 
 ```
-
-
 
 ```json
 {
@@ -52,7 +54,7 @@ echo $rp->parse('https://www.cnet.com/reviews/google-nest-mini-review/');
 
 ```
 
-### Source codes:
+### Source codes
 
 - [Github](https://getcomposer.org/)
 - [Packagist](https://getcomposer.org/)
