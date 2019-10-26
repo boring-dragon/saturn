@@ -2,7 +2,10 @@
 
 namespace Jinas\Saturn\Response;
 
-class Response {
+use Jinas\Saturn\Interfaces\IResponse;
+
+class Response implements IResponse
+{
 
     /**
      * json
@@ -13,7 +16,7 @@ class Response {
      */
     public static function json($data)
     {
-    
-    return json_encode($data, JSON_PRETTY_PRINT);
+
+        return json_encode($data, \JSON_PRETTY_PRINT);
     }
 }

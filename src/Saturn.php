@@ -4,12 +4,13 @@ namespace Jinas\Saturn;
 
 use Jinas\Saturn\Extractors\Extractor;
 use Jinas\Saturn\AppBaseUtil;
+use Jinas\Saturn\Interfaces\ISaturn;
 
-class Saturn extends AppBaseUtil
+class Saturn extends AppBaseUtil implements ISaturn
 {
 
     /**
-     * parse
+     * Parse
      *
      * @param  mixed $url
      *

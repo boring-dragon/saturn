@@ -2,9 +2,25 @@
 
 namespace Jinas\Saturn\Request;
 
-class Client
+use GuzzleHttp\ClientInterface as GuzzleClientInterface;
+use Jinas\Saturn\Interfaces\IClient;
+
+class Client implements IClient
 {
 
+    private $client;
+
+    /**
+     * __construct
+     *
+     * @param  mixed $client
+     *
+     * @return void
+     */
+    public function __construct(GuzzleClientInterface $client)
+    {
+        $this->client = $client;
+    }
     /**
      * request
      *
@@ -14,14 +30,8 @@ class Client
      */
     public function request($url)
     {
-        $ch = curl_init();
-        curl_setopt($ch, CURLOPT_HEADER, 0);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, 1);
-
-        $data = curl_exec($ch);
-        curl_close($ch);
+        $response = $this->client->request('GET', $url);
+        $data = $response->getBody();
 
         return $data;
     }

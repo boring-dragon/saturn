@@ -2,7 +2,9 @@
 
 namespace Jinas\Saturn\Utils;
 
-class ResponseUtil
+use Jinas\Saturn\Interfaces\IResponseUtil;
+
+class ResponseUtil implements IResponseUtil
 {
     /**
      * makeResponse
@@ -12,7 +14,7 @@ class ResponseUtil
      *
      * @return void
      */
-    public static function makeResponse($message,$data)
+    public static function makeResponse($message, $data)
     {
         return [
             'success' => true,
@@ -24,11 +26,11 @@ class ResponseUtil
     public static function makeError($message, array $data = [])
     {
         $res = [
-          'success' => false,
-          'message' => $message,  
+            'success' => false,
+            'message' => $message,
         ];
 
-        if(!empty($data)) {
+        if (!empty($data)) {
             $res['data'] = $data;
         }
 

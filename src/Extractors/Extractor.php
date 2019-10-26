@@ -4,10 +4,10 @@ namespace Jinas\Saturn\Extractors;
 
 use Jinas\Saturn\Request\Client;
 use Jinas\Saturn\AppBaseUtil;
+use Jinas\Saturn\Interfaces\IExtractor;
 use DOMDocument;
-use Exception;
 
-class Extractor extends AppBaseUtil
+class Extractor extends AppBaseUtil implements IExtractor
 {
 
     protected $doc;
@@ -59,7 +59,7 @@ class Extractor extends AppBaseUtil
      */
     protected function loadHtml()
     {
-        $client = new Client;
+        $client = new Client(new \GuzzleHttp\Client);
         $html = $client->request($this->content_url);
         @$this->doc->loadHTML($html);
 

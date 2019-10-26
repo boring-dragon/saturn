@@ -4,8 +4,9 @@ namespace Jinas\Saturn;
 
 use Jinas\Saturn\Response\Response;
 use Jinas\Saturn\Utils\ResponseUtil;
+use Jinas\Saturn\Interfaces\IAppBaseUtil;
 
-class AppBaseUtil
+class AppBaseUtil implements IAppBaseUtil
 {
 
     /**
