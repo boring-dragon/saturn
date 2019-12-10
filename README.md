@@ -56,5 +56,5 @@ echo $rp->parse('https://www.cnet.com/reviews/google-nest-mini-review/');
 
 ### Source codes
 
-- [Github](https://getcomposer.org/)
-- [Packagist](https://getcomposer.org/)
+- [Github](https://github.com/jinas123/saturn)
+- [Packagist](https://packagist.org/packages/jinas/saturn)
