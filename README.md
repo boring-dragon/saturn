@@ -1,4 +1,5 @@
 # Saturn Parser
+Web Crawler
 
 Saturn Parser is a composer package that extracts the bits that humans care about from any URL you give it.
 like article content, titles, authors, published dates, excerpts, lead images, and more.
@@ -40,11 +41,11 @@ echo $rp->parse('https://www.cnet.com/reviews/google-nest-mini-review/');
     "data": {
         "title": "Google Nest Mini review: Google's smallest smart speaker keeps getting better - CNET",
         "un_title": "Google Nest Mini review:\u00a0Google's smallest smart speaker keeps getting better",
-        "lead_image": "https:\/\/cnet3.cbsistatic.com\/img\/BSH2-_S4lmkYNase8GgaOJvCkaY=\/2019\/10\/09\/c07227f1-9255-48db-8bee-1a4851ee5fcf\/google-home-nest-mini-1529.jpg",
+        "lead_image": "https://cnet3.cbsistatic.com/img/BSH2-_S4lmkYNase8GgaOJvCkaY=/2019/10/09/c07227f1-9255-48db-8bee-1a4851ee5fcf/google-home-nest-mini-1529.jpg",
         "date_published": "2019-10-17T05:00:00-0700",
         "description": "Better sound, better listening and better controls pack a punch in Google's pint-size smart speaker. Oh, and it comes in blue now.",
         "keywords": null,
-        "url": "https:\/\/www.cnet.com\/reviews\/google-nest-mini-review\/",
+        "url": "https://www.cnet.com/reviews/google-nest-mini-review/",
         "word_count": 22,
         "domain": "www.cnet.com",
         "site_name": "CNET"
