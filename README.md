@@ -36,7 +36,6 @@ echo $rp->parse('https://www.cnet.com/reviews/google-nest-mini-review/');
 
 ```json
 {
-    {
     "success": true,
     "data": {
         "title": "Google Nest Mini review: Google's smallest smart speaker keeps getting better - CNET",
