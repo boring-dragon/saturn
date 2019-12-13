@@ -1,4 +1,6 @@
-# Saturn Parser
+# :satellite: Saturn Parser
+[![Latest Stable Version](https://poser.pugx.org/jinas/saturn/v/stable)](https://packagist.org/packages/jinas/saturn)
+[![License](https://poser.pugx.org/jinas/saturn/license)](https://packagist.org/packages/jinas/saturn)
 
 Saturn Parser is a composer package that extracts the bits that humans care about from any URL you give it.
 like article content, titles, authors, published dates, excerpts, lead images, and more.
