@@ -1,4 +1,4 @@
-# :satellite: Saturn Parser
+# :rocket: Saturn Parser
 
 [![Latest Stable Version](https://poser.pugx.org/jinas/saturn/v/stable)](https://packagist.org/packages/jinas/saturn)
 [![License](https://poser.pugx.org/jinas/saturn/license)](https://packagist.org/packages/jinas/saturn)
